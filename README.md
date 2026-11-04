@@ -37,6 +37,7 @@ bimbam-buy-ai/
 | Pasta dos documentos | `PASTA_DOCUMENTOS` (já aponta para `D:\bruno\Cursos_e_Materiais\Curso_ALURA_ONE_IA\Challenge_Documentos\BimBam Buy Documentos`). Se essa pasta não existir, usa `documentos\` ao lado do código. |
 | Modelo | `MODELO` (ou variável `BIMBAM_MODELO`) |
 | WhatsApp do SAC | `WHATSAPP_SAC` (hoje fictício: troque pelo oficial) |
+| Email = "sac@bimbambuy.com.br" | `Email`
 | Palavras equivalentes | `SINONIMOS` (ex.: "comunicar" ↔ "relatar") |
 
 ## Executar
