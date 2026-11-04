@@ -7,7 +7,7 @@ relacionados à pergunta e pede a um modelo de IA **local** (Ollama) que redija 
 
 Regras centrais:
 - Não usa conhecimento externo, não inventa prazos, valores ou procedimentos e não faz suposições.
-- Se a informação não estiver nos documentos, mostra **somente** a mensagem do SAC (número configurável).
+- Se a informação não estiver nos documentos, mostra **somente** a mensagem do SAC (número configurável) e email (configurável).
 - Funciona offline, sem APIs pagas, sem nuvem, sem interface gráfica.
 
 ## 2. Arquitetura da solução
@@ -82,6 +82,7 @@ pip install -r requirements.txt
 |---|---|
 | Pasta dos documentos | `PASTA_DOCUMENTOS` (já aponta para `D:\bruno\Cursos_e_Materiais\Curso_ALURA_ONE_IA\Challenge_Documentos\BimBam Buy Documentos`; se não existir, usa `documentos\`) |
 | Modelo de IA | `MODELO` (ou variável de ambiente `BIMBAM_MODELO`) |
+| Email da empresa | `Email` (hoje fictício: troque pelo oficial) |
 | WhatsApp do SAC | `WHATSAPP_SAC` (hoje fictício: troque pelo oficial) |
 | Palavras equivalentes | `SINONIMOS` |
 
@@ -150,7 +151,7 @@ Resposta **exata e única** (esta é fixa no código, não depende do modelo):
 > Qual a cor do uniforme dos entregadores?
 
 Resposta:
-Informação não encontrada. Entre em contato com nosso SAC pelo WhatsApp: +55 11 99999-9999.
+Informação não encontrada. Entre em contato com nosso SAC pelo WhatsApp: +55 11 99999-9999 ou nos envie um Email para sac@bimbambuy.com.br.
 ```
 Isso ocorre quando nenhum trecho dos documentos é relevante para a pergunta (a IA nem é consultada) ou quando a IA
 conclui que os trechos não respondem. O número é fictício e é alterado em `WHATSAPP_SAC` no `config.py`.
