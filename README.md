@@ -72,7 +72,7 @@ Computador fraco? Use `ollama pull qwen2.5:3b` e altere `MODELO` no `config.py`.
 
 **4. Projeto** – na pasta `bimbam-buy-ai`:
 ```
-python -m venv .venv
+py -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -111,7 +111,7 @@ Digite sua pergunta (ou SAIR para encerrar):
 > Qual é o prazo para comunicar um produto danificado?
 
 Resposta:
-Se o produto chegou danificado, o caso deve ser relatado dentro de 48 horas após o recebimento.
+O cliente deve comunicar um produto danificado dentro do prazo de 48 horas após o recebimento.
 
 Fonte: Manual_de_Garantia_de_Produtos_da_BimBam_Buy.txt
 ```
