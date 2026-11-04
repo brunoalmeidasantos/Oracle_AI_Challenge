@@ -3,7 +3,7 @@
 Responde perguntas **somente** com base nos documentos da pasta configurada. Sem site, sem nuvem, sem APIs pagas:
 roda no seu computador com o modelo `qwen2.5:7b` do Ollama.
 Se a informação não estiver nos documentos, mostra **apenas**:
-`Informação não encontrada. Entre em contato com nosso SAC pelo WhatsApp: +55 11 99999-9999 ou envie um email para: .`
+`Informação não encontrada. Entre em contato com nosso SAC pelo WhatsApp: +55 11 99999-9999 ou envie um email para: sac@bimbambuy.com.br.`
 
 ## Estrutura
 ```
